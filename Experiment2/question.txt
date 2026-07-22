@@ -1,0 +1,8 @@
+Aim:
+Implement polynomial regression, on the auto MPG(Miles per Gallon) dataset to predict miles per gallon(MPG) based on engine displacement. Compare polynomial regression results with linear regression. 
+
+Task:
+1.	Load and preprocess the dataset
+2.	Implement polynomial regression on varying degrees.
+3.	Compare the polynomial regression models with linear regression using matrixes such as MSE and R Square
+4.	Visualize the polynomial fit.
