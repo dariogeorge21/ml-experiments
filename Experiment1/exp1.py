@@ -71,3 +71,11 @@ for i in theta:
     index+=1
 
 
+x = np.linspace(X_train.min(), X_train.max(), 100)
+y = theta[0] + theta[1] * x
+
+plt.plot(x, y, color='red')
+plt.xlabel("X")
+plt.ylabel("y")
+plt.title("Regression Line")
+plt.show()
