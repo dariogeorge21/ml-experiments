@@ -57,5 +57,17 @@ print("Bias:", b)
 print("MSE:", mean_squared_error(y_test, y_pred_gd))
 print("R2 Score:", r2_score(y_test, y_pred_gd))
 
-print("\nDataset Columns:")
-print(data.columns)
+# Normal Equation
+
+X_train_ne = np.c_[np.ones((len(X_train),1)), X_train]
+X_test_ne = np.c_[np.ones((len(X_test),1)), X_test]
+
+theta = np.linalg.inv(X_train_ne.T @ X_train_ne) @ X_train_ne.T @ y_train
+y_pred_ne = X_test_ne @ theta
+
+index=0
+for i in theta:
+    print (f"Theta {index}: ",i)
+    index+=1
+
+
